@@ -29,6 +29,7 @@ body {
   background-color: #f3f3f3;
   box-sizing: border-box;
   border-radius: 10px;
+  text-align: center;
 }
 
 /* Subtitle */
@@ -118,5 +119,17 @@ body {
 /* Textarea */
 .input-container textarea {
   height: auto;
-  margin-bottom: 0;
+}
+
+/* Submit button */
+.submit-button {
+  background-color: #6ba2ce;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  width: 80px;
+  margin: 10px;
+  font-size: 100%;
+  cursor: pointer;
 }
