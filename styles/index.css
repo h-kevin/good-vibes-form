@@ -44,6 +44,7 @@ body {
 /* Input label container */
 .label-container {
   display: inline-block;
+  vertical-align: top;
   text-align: right;
   width: 50%;
   box-sizing: border-box;
@@ -104,8 +105,14 @@ body {
 .checkbox-input-element input {
   width: max-content;
   height: max-content;
-  margin: 10px 5px;
+  margin: 5px;
   padding: 0;
+}
+
+/* Radio and checkbox first item */
+.radio-input-element:first-child input,
+.checkbox-input-element:first-child input {
+  margin-top: 15px;
 }
 
 /* Textarea */
