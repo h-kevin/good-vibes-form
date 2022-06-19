@@ -24,11 +24,12 @@ body {
 .form-wrapper {
   width: 70%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 15px;
   padding: 15px;
   background-color: #f3f3f3;
   box-sizing: border-box;
   border-radius: 10px;
+  text-align: center;
 }
 
 /* Subtitle */
@@ -39,4 +40,96 @@ body {
   font-size: 135%;
   font-weight: 500;
   text-align: center;
+}
+
+/* Input label container */
+.label-container {
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+/* Input label */
+.label-container label,
+.label-container span {
+  box-sizing: border-box;
+  padding: 5px 0;
+  margin: 10px 5px 0 10px;
+  display: block;
+}
+
+/* Input container */
+.input-container {
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  box-sizing: border-box;
+  margin-left: -4px;
+}
+
+/* Input ant textarea */
+.input-container input,
+.input-container textarea {
+  display: inline;
+  width: 80%;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 10px 10px 10px 5px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+}
+
+/* Select input */
+.input-container select {
+  width: 80%;
+  max-width: 150px;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 10px 10px 10px 5px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+}
+
+/* Radio and checkbox input wrapper */
+.radio-input-element,
+.checkbox-input-element {
+  display: inline-block;
+  width: 100%;
+}
+
+/* Radio and chexkbox input */
+.radio-input-element input,
+.checkbox-input-element input {
+  width: max-content;
+  height: max-content;
+  margin: 5px;
+  padding: 0;
+}
+
+/* Radio and checkbox first item */
+.radio-input-element:first-child input,
+.checkbox-input-element:first-child input {
+  margin-top: 15px;
+}
+
+/* Textarea */
+.input-container textarea {
+  height: auto;
+}
+
+/* Submit button */
+.submit-button {
+  background-color: #6ba2ce;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  width: 80px;
+  margin: 10px;
+  font-size: 100%;
+  cursor: pointer;
 }
