@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <title>Good Vibes Form</title>
-  <link rel="stylesheet" href="./styles/index.css" />
+  <link
+    rel="stylesheet"
+    href="./styles/index.css"
+  />
 </head>
 
 <body>
@@ -16,7 +19,196 @@
     <h3 class="subtitle">
       Tell us something positive that happened to you today.
     </h3>
-    <form class="form" method="post" action=""></form>
+    <form
+      class="form"
+      method="post"
+      action=""
+    >
+      <!-- Name row -->
+      <div class="form-row">
+        <div class="label-container">
+          <label for="name">Name</label>
+        </div>
+        <div class="input-container">
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+          />
+        </div>
+      </div>
+
+      <!-- Email row -->
+      <div class="form-row">
+        <div class="label-container">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-container">
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email address"
+          />
+        </div>
+      </div>
+
+      <!-- How good it was row -->
+      <div class="form-row">
+        <div class="label-container">
+          <label for="how-good-it-was">On a scale of 1-10, how good was it?</label>
+        </div>
+        <div class="input-container">
+          <input
+            id="how-good-it-was"
+            name="how-good-it-was"
+            type="number"
+            placeholder="Enter a number between 1 and 10"
+            min="1"
+            max="10"
+          />
+        </div>
+      </div>
+
+      <!-- Where it happened row -->
+      <div class="form-row">
+        <div class="label-container">
+          <label for="where-it-happened">Where did it happen?</label>
+        </div>
+        <div class="input-container">
+          <select
+            id="where-it-happened"
+            name="where-it-happened"
+          >
+            <option value="at-home">At home</option>
+            <option value="on-my-commute">On my commute</option>
+            <option value="at-work">At work</option>
+            <option value="on-the-street">On the street</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- When it happened row -->
+      <div class="form-row">
+        <div class="label-container">
+          <span>At what time of day did it happen?</span>
+        </div>
+        <div class="input-container">
+          <div class="radio-input-element">
+            <input
+              type="radio"
+              id="morning"
+              name="when-it-happened"
+              value="morning"
+              checked
+            />
+            <label for="morning">Morning</label>
+          </div>
+          <div class="radio-input-element">
+            <input
+              type="radio"
+              id="afternoon"
+              name="when-it-happened"
+              value="afternoon"
+            />
+            <label for="afternoon">Afternoon</label>
+          </div>
+          <div class="radio-input-element">
+            <input
+              type="radio"
+              id="evening"
+              name="when-it-happened"
+              value="evening"
+            />
+            <label for="evening">Evening</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Emotions row -->
+      <div class="form-row">
+        <div class="label-container">
+          <span>
+            What emotions did you experience?
+            <br />
+            (Select all that apply)
+          </span>
+        </div>
+        <div class="input-container">
+          <div class="checkbox-input-element">
+            <input
+              type="checkbox"
+              id="excited"
+              name="emotions"
+              value="excited"
+              checked
+            />
+            <label for="excited">Excited</label>
+          </div>
+          <div class="checkbox-input-element">
+            <input
+              type="checkbox"
+              id="humbled"
+              name="emotions"
+              value="humbled"
+            />
+            <label for="humbled">Humbled</label>
+          </div>
+          <div class="checkbox-input-element">
+            <input
+              type="checkbox"
+              id="elated"
+              name="emotions"
+              value="elated"
+            />
+            <label for="elated">Elated</label>
+          </div>
+          <div class="checkbox-input-element">
+            <input
+              type="checkbox"
+              id="loved"
+              name="emotions"
+              value="loved"
+            />
+            <label for="loved">Loved</label>
+          </div>
+          <div class="checkbox-input-element">
+            <input
+              type="checkbox"
+              id="enthusiastic"
+              name="emotions"
+              value="enthusiastic"
+            />
+            <label for="enthusiastic">Enthusiastic</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Description row -->
+      <div class="form-row">
+        <div class="label-container">
+          <label for="description">Please describe your positive experience.</label>
+        </div>
+        <div class="input-container">
+          <textarea
+            id="description"
+            name="description"
+            placeholder="Enter your experience here..."
+            rows="3"
+          ></textarea>
+        </div>
+      </div>
+
+      <!-- Submit button -->
+      <div class="form-row">
+        <input
+          type="submit"
+          value="Submit"
+        />
+      </div>
+    </form>
   </div>
 </body>
 
