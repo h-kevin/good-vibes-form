@@ -75,3 +75,15 @@ body {
   border: 1px solid #c0c0c0;
   border-radius: 4px;
 }
+
+/* Select input */
+.input-container select {
+  width: 80%;
+  max-width: 150px;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 10px 10px 10px 5px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+}
