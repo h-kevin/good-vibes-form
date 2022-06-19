@@ -24,7 +24,7 @@ body {
 .form-wrapper {
   width: 70%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 15px;
   padding: 15px;
   background-color: #f3f3f3;
   box-sizing: border-box;
@@ -50,10 +50,12 @@ body {
 }
 
 /* Input label */
-.label-container label {
+.label-container label,
+.label-container span {
   box-sizing: border-box;
-  padding: 5px;
-  margin: 10px 5px 10px 10px;
+  padding: 5px 0;
+  margin: 10px 5px 0 10px;
+  display: block;
 }
 
 /* Input container */
@@ -65,8 +67,10 @@ body {
   margin-left: -4px;
 }
 
-/* Input */
-.input-container input {
+/* Input ant textarea */
+.input-container input,
+.input-container textarea {
+  display: inline;
   width: 80%;
   height: 30px;
   box-sizing: border-box;
@@ -86,4 +90,26 @@ body {
   margin: 10px 10px 10px 5px;
   border: 1px solid #c0c0c0;
   border-radius: 4px;
+}
+
+/* Radio and checkbox input wrapper */
+.radio-input-element,
+.checkbox-input-element {
+  display: inline-block;
+  width: 100%;
+}
+
+/* Radio and chexkbox input */
+.radio-input-element input,
+.checkbox-input-element input {
+  width: max-content;
+  height: max-content;
+  margin: 10px 5px;
+  padding: 0;
+}
+
+/* Textarea */
+.input-container textarea {
+  height: auto;
+  margin-bottom: 0;
 }
