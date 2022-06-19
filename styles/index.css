@@ -1,0 +1,35 @@
+/* Global styles */
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  background-color: #a9d7e9;
+  font-size: 16px;
+}
+
+/* Title */
+.title {
+  width: max-content;
+  max-width: 70%;
+  margin: 40px auto;
+  font-size: 300%;
+}
+
+/* Form wrapper */
+.form-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #f3f3f3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+  width: max-content;
+  max-width: 100%;
+  margin: 20px auto;
+  font-size: 135%;
+}
