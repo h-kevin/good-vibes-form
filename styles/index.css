@@ -40,3 +40,38 @@ body {
   font-weight: 500;
   text-align: center;
 }
+
+/* Input label container */
+.label-container {
+  display: inline-block;
+  text-align: right;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+/* Input label */
+.label-container label {
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 10px 5px 10px 10px;
+}
+
+/* Input container */
+.input-container {
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  box-sizing: border-box;
+  margin-left: -4px;
+}
+
+/* Input */
+.input-container input {
+  width: 80%;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 10px 10px 10px 5px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+}
